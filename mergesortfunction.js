@@ -1,11 +1,11 @@
-function mergesort() {
+
     
     // idea is to sort smaller arrays and combine them together
     // // to merge them in sorted order 
     
     // IF more than one element, follow below process when
     // you runinto more than one element start again
-    
+    // on input of array of n<2 elements return
     //  sort left half of list
     // sort right half of list
     // merge the two halves together
@@ -38,9 +38,56 @@ function mergesort() {
     // do this with for loop, i and j are already the correct indexes
     // to compare, and list is sorted to begin with
 
-
+ //  sort left half of list
+    // sort right half of list
+    // merge the two halves together
 
 
 
     
+    
+
+     //  sort left half of list
+    // sort right half of list
+    // merge the two halves together
+
+    function mergesort(arr) {
+
+        let length = arr.length
+        // if array passed is of length 1, return
+          if (length < 2) {return}
+
+        // otherwise, we want to split the array in half
+        // length / 2 !
+        // for even lengths 
+
+        if (length % 2 == 0) {
+            
+            let half = length/2
+            console.log(half, 'even half')
+            // we take from 0 to half - 1
+            // and from half to length - 1 
+        }
+        
+        // for odd lengths
+        else {
+            // splits length in two, because we get a half value
+            // we split into first half last half, which is the
+            // value plus 0.5 and value minus 0.5
+            let firsthalf = Math.floor(length/2)
+            let secondhalf = Math.ceil(length/2)
+         console.log(firsthalf,secondhalf)
+         // we will copy one less value than these though --array starts at 0, eg.
+         // 5 and 6 half of 11, 0-4 in one and 5-10 in abother
+            // 0 to first half - 1
+            // second half - 1 to length - 1
+             
+
+        }
+
+
+
     }
+
+
+    console.log(mergesort([1,2,3,4, 3,2,3,4,5,3]))
